@@ -1,14 +1,14 @@
 let ITEM = DS1302.create(DigitalPin.P13, DigitalPin.P14, DigitalPin.P15)
-ITEM.start()
 ITEM.DateTime(
-2020,
+2024,
 2,
 15,
 4,
-0,
-0,
-0
+9,
+21,
+4
 )
+ITEM.start()
 basic.forever(function () {
-    basic.showNumber(Math.round(ITEM.getSecond()))
+    basic.showNumber(ITEM.getSecond())
 })
