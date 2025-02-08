@@ -8,6 +8,7 @@ ITEM.DateTime(
 30,
 4
 )
+ITEM.start()
 basic.forever(function () {
     basic.showNumber(Math.round(ITEM.getSecond()))
 })
