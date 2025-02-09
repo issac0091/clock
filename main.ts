@@ -1,12 +1,12 @@
 let ITEM = DS1302.create(DigitalPin.P13, DigitalPin.P14, DigitalPin.P15)
 ITEM.DateTime(
-2018,
+2025,
 2,
-15,
-4,
-12,
-30,
-4
+9,
+7,
+18,
+47,
+59
 )
 ITEM.start()
 basic.forever(function () {
